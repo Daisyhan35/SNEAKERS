@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Link CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>ecommerce-product-page</title>
+  </head>
+
+  <body>
+
+    <!-- Header Section -->
+    <header>
+
+      <!-- Navbar Section -->
+      <aside id="mySidebar" style="display: none;">
+        <ul style="margin-top: 60px;">
+          <li onclick="closeBar(); return false;"><a href=""><img src="images/icon-close.svg"></a></li>
+          <li><a href="">Collections</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </aside>
+      <nav>
+        <ul>
+
+          <div class="links">
+            <li class="menu-icon" onclick="showBar(); return false;" style="cursor: pointer;"><img src="images/icon-menu.svg"></li>
+            <li class="logo-icon"><img src="images/logo.svg"></li>
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </div>
+
+          <div class="float-right">
+              <li onclick="showCart(); return false;">
+                <a href=""><img src="images/icon-cart.svg"></a>
+                <a href="" id="cartAmount" class="CartAmount"></a>
+              </li>
+              <li onclick="showCart(); return false;"><a href=""><img src="images/image-avatar.png"class="avatar-icon"></a></li>
+              
+              <section id="hidden" style="display: none;">
+                <h3>Cart</h3>
+                <hr>
+                <h6>Your cart is empty.</h6>
+              </section>
+          </div>
+
+        </ul>
+      </nav>
+
+    </header>
+    <div class="fix"></div>
+    <hr>
+
+    <!-- Container Div -->
+    <div class="container">
+
+      <div class="container-body">
+
+        <!-- Image Section -->
+        <div>
+
+          <div class="position-absolute">
+            
+            <img src="images/image-product-1.jpg" class="product-1" id="main_img" onclick="diffImage(this)">
+            <img src="images/image-product-1.jpg" class="product-2" id="imgClickAndChange">
+
+            <div class="pre-next1">
+            <ul>
+              <li onclick="changeImage(); return false;"><a href=""><img src="images/icon-previous.svg"></a></li>
+              <li onclick="changeImage0(); return false;"><a href=""><img src="images/icon-next.svg" class="next"></a></li>
+            </ul>
+            </div>
+            
+          </div>
+
+          <div class="thumbnail">
+            <img src="images/image-product-1-thumbnail.jpg" onclick="changeImage1()" style="opacity: 0.7;">
+            <img src="images/image-product-2-thumbnail.jpg" onclick="changeImage2()">
+            <img src="images/image-product-3-thumbnail.jpg" onclick="changeImage3()">
+            <img src="images/image-product-4-thumbnail.jpg" onclick="changeImage4()">
+          </div>
+          
+        </div>
+
+        <!-- Text Section -->
+        <div class="text-div">
+          
+          <h5>SNEAKER COMPANY</h5>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable outer sole, they'll withstand everthing the weather can offer.</p>
+
+          <div class="flex">
+            <h2>$125.00</h2>
+            <h4>50%</h4>
+          </div>
+
+          <p class="del">$250.00</p>
+
+          <div id="shop">
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
